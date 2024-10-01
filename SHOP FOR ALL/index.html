@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP FOR ALL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    
+    <nav class="navbar">
+        <div class="logo">SHOP FOR ALL</div>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">POS</a></li>
+        </ul>
+    </header>
+        <div class="mobile-menu" id="mobile-menu">&#9776;</div>
+    </nav>
+    <section class="advert">
+        <div class="advert-content">
+            <h3 id="advert-title">Special Offer!</h3>
+            <p id="advert-text">Get 20% off on all products. Limited time only.</p>
+            
+        </div>
+
+        
+    </section>
+
+<section class="dashboard">
+        <div class="container">
+            <h1>Dashboard Overview</h1>
+            <div class="stats">
+                <div class="stat-box">
+                    <h2>Stock Levels</h2>
+                    <p>Current: 1250 Items</p>
+                </div>
+                <div class="stat-box">
+                    <h2>Sales Today</h2>
+                    <p>$4,320</p>
+                </div>
+                <div class="stat-box">
+                    <h2>Low Stock Alerts</h2>
+                    <p>15 Items</p>
+                </div>
+                <div class="stat-box">
+                    <h2>Orders Pending</h2>
+                    <p>8 Orders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="pos">
+        <div class="container">
+            <h2>Point of Sale (POS)</h2>
+            <div class="pos-terminal">
+                <form id="pos-form">
+                    <label for="product">Product</label>
+                    <input type="text" id="product" placeholder="Enter Product Name or SKU">
+
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" placeholder="Enter Quantity">
+
+                    <label for="price">Price</label>
+                    <input type="number" id="price" placeholder="Price per unit">
+
+                    <button type="submit" class="action-btn">Process Sale</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products">
+        <div class="container">
+            <h2>Product Management</h2>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>SKU</th>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Milk 1L</td>
+                        <td>SKU12345</td>
+                        <td>250</td>
+                        <td>$2.50</td>
+                        <td><button class="action-btn">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Eggs (Dozen)</td>
+                        <td>SKU67890</td>
+                        <td>180</td>
+                        <td>$3.00</td>
+                        <td><button class="action-btn">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Rice (30 bags)</td>
+                        <td>SKU67891</td>
+                        <td>200</td>
+                        <td>$10.00</td>
+                        <td><button class="action-btn">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Fruit</td>
+                        <td>SKU67892</td>
+                        <td>3000</td>
+                        <td>$50.00</td>
+                        <td><button class="action-btn">Edit</button></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+ 
+    <section class="suppliers">
+        <div class="container">
+            <h2>Supplier Management</h2>
+            <table class="supplier-table">
+                <thead>
+                    <tr>
+                        <th>Supplier Name</th>
+                        <th>Contact</th>
+                        <th>Products Supplied</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fresh Dairy Supplies</td>
+                        <td>123-4567</td>
+                        <td>Milk, Cheese, Butter</td>
+                        <td><button class="action-btn">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Harvest Farms</td>
+                        <td>555987-6543</td>
+                        <td>Eggs, Vegetables, Fruits</td>
+                        <td><button class="action-btn">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Dovel</td>
+                        <td>+23587654</td>
+                        <td>Water, Drinks, Juice</td>
+                        <td><button class="action-btn">Edit</button></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    
+    <section class="sales">
+        <div class="container">
+            <h2>Sales Overview</h2>
+            <table class="sales-table">
+                <thead>
+                    <tr>
+                        <th>Sale ID</th>
+                        <th>Date</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>2024-09-15</td>
+                        <td>Milk 1L</td>
+                        <td>5</td>
+                        <td>$12.50</td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>2024-09-15</td>
+                        <td>Eggs (Dozen)</td>
+                        <td>3</td>
+                        <td>$9.00</td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>2024-09-15</td>
+                        <td>Bread (Dozen)</td>
+                        <td>3</td>
+                        <td>$5.00</td>
+                    </tr>
+                 
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="reports">
+        <div class="container">
+            <h2>Reports</h2>
+            <div class="report-links">
+                <button class="action-btn">Sales Report</button>
+                <button class="action-btn">Stock Report</button>
+                <button class="action-btn">Supplier Report</button>
+            </div>
+        </div>
+    </section>
+
+ 
+<section class="image-text-slider">
+    <div class="slider">
+        <div class="slide">
+            <img src="images/pics1.jpg" alt="Image 1">
+            <p>shop for all is a place for all</p>
+        </div>
+        <div class="slide">
+            <img src="images/pics2.jpg" alt="Image 2">
+            <p>We sell at afordable prices </p>
+        </div>
+        <div class="slide">
+            <img src="images/pics3.jpg" alt="Image 3">
+            <p>the best you can get</p>
+        </div>
+        <div class="slide">
+            <img src="images/pics4.jpg" alt="Image 4">
+            <p>we can deliver to your door step</p>
+        </div>
+     
+    </div>
+</section>
+
+    
+
+  
+    <footer>
+        <p>&copy; 2024 Shop For All - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
